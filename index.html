@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aastha Thakker – Cybersecurity & Blog</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/themes.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body class="light-theme">
+  <!-- Dynamic Background Canvas -->
+  <canvas id="background-canvas"></canvas>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 py-4 glass-effect glass-effect-light dark:glass-effect-dark">
+    <div class="container mx-auto px-4 flex justify-between items-center">
+      <a href="#home" class="text-xl font-bold nav-link glass-nav">Aastha Thakker</a>
+      <nav class="hidden md:flex space-x-4">
+        <a href="#home" class="font-medium nav-link glass-nav">Home</a>
+        <a href="#experience" class="font-medium nav-link glass-nav">Experience</a>
+        <a href="#events" class="font-medium nav-link glass-nav">Events</a>
+        <a href="#blogs" class="font-medium nav-link glass-nav">Blogs</a>
+        <a href="#projects" class="font-medium nav-link glass-nav">Projects</a>
+        <a href="#contact" class="font-medium nav-link glass-nav">Contact</a>
+      </nav>
+      
+      <!-- Mobile menu button -->
+      <button id="mobileMenuToggle" class="md:hidden theme-toggle">
+        <svg class="theme-icon" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+        </svg>
+        <span class="text-sm font-medium">Menu</span>
+      </button>
+      
+      <button id="themeToggle" class="hidden md:flex theme-toggle">
+        <svg class="theme-icon light-icon" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+        <svg class="theme-icon dark-icon hidden" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 2v2m0 16v2m10-10h-2M4 12H2m15.071-5.071l-1.414 1.414M8.343 16.657l-1.414 1.414m11.314 0l-1.414-1.414M8.343 7.343L6.929 5.929"/>
+        </svg>
+        <span class="text-sm font-medium light-label">Dark</span>
+        <span class="text-sm font-medium dark-label hidden">Light</span>
+      </button>
+    </div>
+    
+    <!-- Mobile Navigation Menu -->
+    <div id="mobileMenu" class="hidden md:hidden mt-4 px-4">
+      <nav class="glass-effect glass-effect-light dark:glass-effect-dark rounded-2xl p-4 space-y-2">
+        <a href="#home" class="block font-medium nav-link glass-nav text-center">Home</a>
+        <a href="#experience" class="block font-medium nav-link glass-nav text-center">Experience</a>
+        <a href="#events" class="block font-medium nav-link glass-nav text-center">Events</a>
+        <a href="#blogs" class="block font-medium nav-link glass-nav text-center">Blogs</a>
+        <a href="#projects" class="block font-medium nav-link glass-nav text-center">Projects</a>
+        <a href="#contact" class="block font-medium nav-link glass-nav text-center">Contact</a>
+        <div class="flex justify-center pt-2">
+          <button id="mobileThemeToggle" class="theme-toggle">
+            <svg class="theme-icon mobile-light-icon" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+            <svg class="theme-icon mobile-dark-icon hidden" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2v2m0 16v2m10-10h-2M4 12H2m15.071-5.071l-1.414 1.414M8.343 16.657l-1.414 1.414m11.314 0l-1.414-1.414M8.343 7.343L6.929 5.929"/>
+            </svg>
+            <span class="text-sm font-medium mobile-light-label">Dark</span>
+            <span class="text-sm font-medium mobile-dark-label hidden">Light</span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 py-8 md:py-16">
+    <!-- Hero Section -->
+    <section id="home" class="mb-20">
+      <div class="card p-8 rounded-2xl shadow-lg hover-effect">
+        <!-- Profile Image - Centered -->
+        <div class="flex justify-center mb-8">
+          <div class="relative">
+            <img src="https://placehold.co/200x200/D3B9DF/333333?text=Aastha" alt="Aastha profile picture" class="w-48 h-48 rounded-full shadow-lg border-4 border-accent-color object-cover">
+            <div class="absolute inset-0 rounded-full bg-gradient-to-br from-primary-color/20 to-accent-color/20"></div>
+          </div>
+        </div>
+        
+        <!-- Hero Content -->
+        <div class="text-center max-w-4xl mx-auto">
+          <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight"><span class="text-primary-color">Aastha Thakker</span></h1>
+          <p class="text-lg md:text-xl mb-6 font-medium max-w-3xl mx-auto">I’m Aastha Thakker, a cybersecurity student and am passionate about turning complex security concepts into something everyone can understand. Alongside working with SIEM tools and investigating threats, I write weekly blogs where I break down topics like AI, blockchain, IoT, and digital forensics in a simple, engaging way.
+
+My journey isn’t limited to the classroom, from hackathons to meetups, I’ve gone from being an eager attendee to hosting events and even stepping up as a speaker. Beyond tech, I enjoy connecting real-life experiences with cybersecurity, making my content not just technical but also relatable.
+
+Whether you’re here to explore my blogs, learn from my experiences, or just connect, you’ll find a little mix of tech and storytelling throughout.</p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="#experience" class="py-3 px-6 rounded-xl font-semibold border hover:bg-gray-200 dark:hover:bg-gray-700 nav-link transition-colors">See Experience</a>
+            <a href="#blogs" class="py-3 px-6 rounded-xl font-semibold border hover:bg-gray-200 dark:hover:bg-gray-700 nav-link transition-colors">Read Blogs</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Access Tiles -->
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
+        <div class="quick-tile glass-effect glass-effect-light dark:glass-effect-dark p-4 rounded-xl cursor-pointer hover-effect" onclick="app.showLatestPost()">
+          <div class="flex items-center gap-3">
+            <svg class="w-6 h-6 text-accent-color flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+            </svg>
+            <div class="min-w-0 flex-1">
+              <p class="font-medium text-sm">Latest Post</p>
+              <p class="text-xs text-gray-500 dark:text-gray-400 truncate">BiTM: A Practical Walkthrough</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="quick-tile glass-effect glass-effect-light dark:glass-effect-dark p-4 rounded-xl cursor-pointer hover-effect" onclick="app.showNextEvent()">
+          <div class="flex items-center gap-3">
+            <svg class="w-6 h-6 text-accent-color flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+            </svg>
+            <div class="min-w-0 flex-1">
+              <p class="font-medium text-sm">Next Event</p>
+              <p class="text-xs text-gray-500 dark:text-gray-400 truncate">CyberCon 2025</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="quick-tile glass-effect glass-effect-light dark:glass-effect-dark p-4 rounded-xl cursor-pointer hover-effect" onclick="app.showCurrentProject()">
+          <div class="flex items-center gap-3">
+            <svg class="w-6 h-6 text-accent-color flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+            <div class="min-w-0 flex-1">
+              <p class="font-medium text-sm">Current Project</p>
+              <p class="text-xs text-gray-500 dark:text-gray-400 truncate">IntelBox Security Platform</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="quick-tile glass-effect glass-effect-light dark:glass-effect-dark p-4 rounded-xl cursor-pointer hover-effect" onclick="app.showContact()">
+          <div class="flex items-center gap-3">
+            <svg class="w-6 h-6 text-accent-color flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+            <div class="min-w-0 flex-1">
+              <p class="font-medium text-sm">Contact</p>
+              <p class="text-xs text-gray-500 dark:text-gray-400 truncate">Get in touch</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="experience" class="mb-20" style="display: none;">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">Experience & Education</h2>
+      
+      <!-- Experience Section -->
+      <div class="card p-8 rounded-2xl shadow-lg mb-8">
+        <h3 class="text-2xl font-bold mb-6 text-center bg-purple-600 text-white py-2 px-4 rounded">EXPERIENCE</h3>
+        <div class="timeline">
+          <div class="timeline-item card hover-effect">
+            <h3 class="font-semibold text-lg">SOC Analyst</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Infopercept • June 2024 - July 2025</p>
+            <ul class="list-disc ml-6 text-sm">
+              <li>Performed security monitoring, incident response, & threat detection using SIEM & SOAR.</li>
+              <li>Created SIEM rules, SOAR playbooks, dashboards, and visualizations.</li>
+              <li>Collaborated with clients to validate alerts and reduce false positives.</li>
+              <li>Created documentation, including the development of playbooks and client-specific SOPs.</li>
+              <li>Co-hosted Infopercept's 10th year celebration event.</li>
+            </ul>
+          </div>
+          
+          <div class="timeline-item card hover-effect">
+            <h3 class="font-semibold text-lg">Documentation Team Lead</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">THM - The Hacker's Meetup • December 2023 - Present</p>
+            <ul class="list-disc ml-6 text-sm">
+              <li>Lead a team creating and maintaining technical documentation on cybersecurity.</li>
+              <li>Hosted multiple THM events, promoting collaboration and knowledge-sharing.</li>
+            </ul>
+          </div>
+          
+          <div class="timeline-item card hover-effect">
+            <h3 class="font-semibold text-lg">AI-ML Internship</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Vault-Tec • Oct 2024 - Nov 2024</p>
+            <ul class="list-disc ml-6 text-sm">
+              <li>Developed a machine learning model for <strong>Brain Tumor Detection</strong> using Kaggle data set.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education Section -->
+      <div class="card p-8 rounded-2xl shadow-lg">
+        <h3 class="text-2xl font-bold mb-6 text-center bg-purple-600 text-white py-2 px-4 rounded">EDUCATION</h3>
+        <div class="timeline">
+          <div class="timeline-item card hover-effect">
+            <h3 class="font-semibold text-lg">Master of Science in Cyber Security (MSc. CS Sem-1)</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">National Forensics Sciences University (NFSU - Gandhinagar) • Aug 2025 - Present</p>
+            <ul class="list-disc ml-6 text-sm">
+              <li>First runner up in GCET Nexathon</li>
+            </ul>
+          </div>
+          
+          <div class="timeline-item card hover-effect">
+            <h3 class="font-semibold text-lg">Bachelor of Science in Cyber Security with Digital Forensics</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Gujarat University • Aug 2022 - Jul 2025 • CGPA: 8.23</p>
+            <ul class="list-disc ml-6 text-sm">
+              <li>Class Representative - First Year</li>
+              <li>Secured 1st position at 'TechKaushalya' Event for 'Cyber Scenario'</li>
+              <li>Second Runner up in AIT Pune Nextniche Hackathon</li>
+            </ul>
+          </div>
+          
+          <div class="timeline-item card hover-effect">
+            <h3 class="font-semibold text-lg">Higher Secondary Education</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Maharaja Agrasen Vidyalaya • 2019 - 2022</p>
+            <ul class="list-disc ml-6 text-sm">
+              <li>CBSE - 12th Science (2021 -2022) - 86.8%</li>
+              <li>CBSE - 10th (2019 - 2020) - 89.4%</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- Events Section -->
+<section id="events" class="mb-20" style="display: none;">
+  <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">Events</h2>
+  <div class="events-grid">
+    <!-- Event 1 -->
+    <div class="event-card">
+      <div class="floating-icon">🏆</div>
+      <div class="event-image">
+        <img src="https://placehold.co/400x300/CDB4DB/333333?text=Nexathon+2nd+Position" alt="Nexathon Hackathon">
+        <div class="image-overlay"></div>
+      </div>
+      <div class="event-content">
+        <h3 class="event-title">Nexathon 2025 - 2nd Position</h3>
+        <div class="event-text-container">
+          <div class="event-preview">
+            24-hour hackathon at G H Patel College of Engineering & Technology. Built blockchain + AI solution for tamper-proof file integrity with innovative features...
+          </div>
+          <div class="event-full">
+            <p>Achieved 2nd position at Nexathon, a 24-hour hackathon hosted by G H Patel College of Engineering & Technology, Anand. Out of 1336 participants and 30 qualifying teams, we made it to the top 7 finalists.</p>
+            <p>Our solution combined Blockchain + AI for tamper-proof file integrity and smart logging, built with MongoDB, Python, and frontend stack. Added RBAC authentication and AI-driven chatbot for legal references under Indian regulations.</p>
+            <p>The experience included 4 stages of evaluation, pitching to 20+ jury members, midnight jamming sessions, and even Ganpati darshan during the event.</p>
+          </div>
+        </div>
+        <div class="read-more-indicator">
+          <span class="indicator-text">Hover to read more</span>
+          <div class="indicator-arrow">→</div>
+        </div>
+      </div>
+      <div class="card-shine"></div>
+    </div>
+
+    <!-- Event 2 -->
+    <div class="event-card">
+      <div class="floating-icon">🥉</div>
+      <div class="event-image">
+        <img src="https://placehold.co/400x300/E6A9BF/333333?text=NextNiche+3rd+Position" alt="NextNiche Hackathon">
+        <div class="image-overlay"></div>
+      </div>
+      <div class="event-content">
+        <h3 class="event-title">NextNiche Hackathon - 3rd Position</h3>
+        <div class="event-text-container">
+          <div class="event-preview">
+            First hackathon experience at AIT Pune. 18-hour challenge building mental health platform with AI-driven features and crisis intervention...
+          </div>
+          <div class="event-full">
+            <p>My first hackathon experience - NextNiche, an 18-hour challenge at AIT Pune. Secured 3rd position out of 400+ teams and advanced to the Shark Tank event.</p>
+            <p>Built a mental health screening platform with 24x7 video call crisis intervention, AI detection for suicidal tendencies, anxiety patterns, and personalized study planners for exam stress management.</p>
+            <p>Technical stack included Python for data visualization, strong cybersecurity measures with IDOR prevention, secure authentication, RBAC, and encryption. Special thanks to psychology professor guidance on test structuring.</p>
+          </div>
+        </div>
+        <div class="read-more-indicator">
+          <span class="indicator-text">Hover to read more</span>
+          <div class="indicator-arrow">→</div>
+        </div>
+      </div>
+      <div class="card-shine"></div>
+    </div>
+
+    <!-- Event 3 -->
+    <div class="event-card">
+      <div class="floating-icon">🎤</div>
+      <div class="event-image">
+        <img src="https://placehold.co/400x300/B5CEE0/333333?text=Infopercept+10th+Anniversary" alt="Infopercept Anniversary">
+        <div class="image-overlay"></div>
+      </div>
+      <div class="event-content">
+        <h3 class="event-title">Infopercept 10th Anniversary Co-Host</h3>
+        <div class="event-text-container">
+          <div class="event-preview">
+            Co-hosted Infopercept's milestone celebration with cricket-themed event. Led panel discussions with industry leaders and celebrated innovation...
+          </div>
+          <div class="event-full">
+            <p>Had the honor of co-hosting Infopercept's 10th anniversary celebration alongside India's cricket victory. The cricket-themed event perfectly captured the spirit of teamwork and strategy.</p>
+            <p>Led insightful panel discussions and Q&A sessions with esteemed leaders including the CEO, Co-founders (SOC & TOC Director, Compliance Director, Red Team Director), CTO, VP of DevSecOps, CRO, and Chief Marketing Expert.</p>
+            <p>The event celebrated a decade of Infopercept's journey built on teamwork, leadership excellence, and technological innovation in cybersecurity.</p>
+          </div>
+        </div>
+        <div class="read-more-indicator">
+          <span class="indicator-text">Hover to read more</span>
+          <div class="indicator-arrow">→</div>
+        </div>
+      </div>
+      <div class="card-shine"></div>
+    </div>
+
+    <!-- Event 4 -->
+    <div class="event-card">
+      <div class="floating-icon">✍️</div>
+      <div class="event-image">
+        <img src="https://placehold.co/400x300/805D90/333333?text=One+Year+Blogging" alt="Blogging Anniversary">
+        <div class="image-overlay"></div>
+      </div>
+      <div class="event-content">
+        <h3 class="event-title">One Year of Blogging Journey</h3>
+        <div class="event-text-container">
+          <div class="event-preview">
+            Celebrating one year since publishing my first blog post. From self-doubt to consistent writing with community support and growth...
+          </div>
+          <div class="event-full">
+            <p>Exactly one year ago, I published my first blog post after months of hesitation and self-doubt. Started with the question "Will people even read it?" but took the leap of faith.</p>
+            <p>The journey began with encouragement from mentors who said "Write anything you want. After all, it's your blog." My mom's sarcastic challenge - "I know you won't post it because you think it's not good enough" - gave me the final push.</p>
+            <p>Throughout the year, friends became my biggest supporters, sharing every post and link, showing unwavering support. The blogging journey has been about overcoming self-doubt and building a consistent writing habit.</p>
+          </div>
+        </div>
+        <div class="read-more-indicator">
+          <span class="indicator-text">Hover to read more</span>
+          <div class="indicator-arrow">→</div>
+        </div>
+      </div>
+      <div class="card-shine"></div>
+    </div>
+
+    <!-- Event 5 (Hackers Meetup) -->
+    <div class="event-card">
+      <div class="floating-icon">🎤</div>
+      <div class="event-image">
+        <img src="https://placehold.co/400x300/B5CEE0/333333?text=Hackers+Meetup" alt="Hackers Meetup">
+        <div class="image-overlay"></div>
+      </div>
+      <div class="event-content">
+        <h3 class="event-title">Speaker at Hackers Meetup</h3>
+        <div class="event-text-container">
+          <div class="event-preview">
+            From sitting in the audience to standing on stage—it’s been quite a ride! I had an awesome experience speaking on “IoT: Connect the Unconnected”...
+          </div>
+          <div class="event-full">
+            <p>From sitting in the audience to standing on stage—it’s been quite a ride! I had an awesome experience speaking on “IoT: Connect the Unconnected” at The Hackers Meetup.</p>
+            <p>IoT is changing the game by connecting billions of devices, enabling them to share data and work together for a smarter, more connected world.</p>
+            <p>Thanks to everyone who made this moment so memorable!</p>
+          </div>
+        </div>
+        <div class="read-more-indicator">
+          <span class="indicator-text">Hover to read more</span>
+          <div class="indicator-arrow">→</div>
+        </div>
+      </div>
+      <div class="card-shine"></div>
+    </div>
+  </div>
+
+</section>
+
+
+    <!-- Blogs Section -->
+    <section id="blogs" class="mb-20" style="display: none;">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">Blogs</h2>
+      <div id="blog-content-container">
+        <div class="mb-4" id="search-container">
+          <input type="text" id="searchInput" placeholder="Search posts..." class="w-full p-3 rounded-lg border focus:outline-none focus:ring-2 focus:ring-accent-color transition-colors">
+        </div>
+        <div id="category-container" class="flex flex-wrap gap-2 mb-6"></div>
+        <div id="postsList" class="blog-grid"></div>
+        <div id="postView" class="hidden"></div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="mb-20" style="display: none;">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="project-card card p-6 rounded-2xl shadow-lg">
+          <div class="w-full h-48 overflow-hidden rounded-lg mb-4 bg-gradient-to-br from-purple-400 to-pink-400 flex items-center justify-center">
+            <svg class="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2L2 7v10c0 5.55 3.84 9.739 9 11 5.16-1.261 9-5.45 9-11V7l-10-5z"/>
+            </svg>
+          </div>
+          <h3 class="font-bold text-xl mb-3">AI-ML Project</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4">Machine learning project focusing on predictive analytics and data modeling using Python and various ML libraries.</p>
+          <a href="https://github.com/AasthaThakker/AI-ML-Project" target="_blank" class="inline-flex items-center text-accent-color hover:underline font-medium">
+            View on GitHub
+            <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M10 6v2H5v11h11v-5h2v6a1 1 0 01-1 1H4a1 1 0 01-1-1V7a1 1 0 011-1h6zM21 3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z"/>
+            </svg>
+          </a>
+        </div>
+        
+        <div class="project-card card p-6 rounded-2xl shadow-lg">
+          <div class="w-full h-48 overflow-hidden rounded-lg mb-4 bg-gradient-to-br from-blue-400 to-teal-400 flex items-center justify-center">
+            <svg class="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2A10 10 0 002 12a10 10 0 0010 10 10 10 0 0010-10A10 10 0 0012 2zm0 18a8 8 0 01-8-8 8 8 0 018-8 8 8 0 018 8 8 8 0 01-8 8z"/>
+              <path d="M12 7a5 5 0 100 10 5 5 0 000-10zm0 8a3 3 0 110-6 3 3 0 010 6z"/>
+            </svg>
+          </div>
+          <h3 class="font-bold text-xl mb-3">AT Web Scraping</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4">Advanced web scraping tool built with Python for automated data extraction and analysis from various web sources.</p>
+          <a href="https://github.com/AasthaThakker/AT-Web-Scrapping" target="_blank" class="inline-flex items-center text-accent-color hover:underline font-medium">
+            View on GitHub
+            <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M10 6v2H5v11h11v-5h2v6a1 1 0 01-1 1H4a1 1 0 01-1-1V7a1 1 0 011-1h6zM21 3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z"/>
+            </svg>
+          </a>
+        </div>
+        
+        <div class="project-card card p-6 rounded-2xl shadow-lg">
+          <div class="w-full h-48 overflow-hidden rounded-lg mb-4 bg-gradient-to-br from-green-400 to-emerald-400 flex items-center justify-center">
+            <svg class="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M4 4h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2zm0 2v12h16V6H4zm2 2h12v2H6V8zm0 4h12v2H6v-2z"/>
+            </svg>
+          </div>
+          <h3 class="font-bold text-xl mb-3">IntelBox</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4">Cybersecurity intelligence platform for threat analysis and security monitoring with automated reporting capabilities.</p>
+          <a href="https://github.com/AasthaThakker/IntelBox" target="_blank" class="inline-flex items-center text-accent-color hover:underline font-medium">
+            View on GitHub
+            <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M10 6v2H5v11h11v-5h2v6a1 1 0 01-1 1H4a1 1 0 01-1-1V7a1 1 0 011-1h6zM21 3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+<section id="contact" class="mb-20" style="display: none;">
+  <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">Contact</h2>
+  <div class="card p-8 rounded-2xl shadow-lg hover-effect">
+    <p class="text-center text-lg mb-6">Have a question or want to collaborate? Reach out to me!</p>
+    
+    <form 
+      id="contactForm"
+      action="https://formspree.io/f/mgvnwlag" 
+      method="POST" 
+      class="grid grid-cols-1 md:grid-cols-2 gap-6"
+    >
+      <div class="col-span-1">
+        <label for="name" class="block text-sm font-medium mb-1">Name</label>
+        <input type="text" id="name" name="name" required autocomplete="name"
+          class="w-full p-3 rounded-lg border focus:outline-none focus:ring-2 focus:ring-accent-color">
+      </div>
+      
+      <div class="col-span-1">
+        <label for="email" class="block text-sm font-medium mb-1">Email</label>
+        <input type="email" id="email" name="email" required autocomplete="email"
+          class="w-full p-3 rounded-lg border focus:outline-none focus:ring-2 focus:ring-accent-color">
+      </div>
+      
+      <div class="col-span-2">
+        <label for="message" class="block text-sm font-medium mb-1">Message</label>
+        <textarea id="message" name="message" rows="4"
+          class="w-full p-3 rounded-lg border focus:outline-none focus:ring-2 focus:ring-accent-color"></textarea>
+      </div>
+      
+      <div class="col-span-2 flex justify-center">
+        <button type="submit" 
+          class="py-3 px-6 rounded-xl font-semibold border hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+          Send Message
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('contactForm');
+
+  if (!form) return;
+
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    try {
+      const res = await fetch(form.action, {
+        method: form.method,
+        body: formData,
+        headers: { 'Accept': 'application/json' } // Optional, Formspree returns JSON
+      });
+
+      if (res.ok) {
+        showStatusMessage('✅ Thanks! Your message has been sent.', 'bg-green-500');
+        form.reset();
+      } else {
+        showStatusMessage('❌ Oops! Something went wrong.', 'bg-red-500');
+      }
+    } catch (err) {
+      showStatusMessage('⚠️ Error: ' + err.message, 'bg-red-500');
+    }
+  });
+
+  function showStatusMessage(msg, colorClass) {
+    let status = document.getElementById('statusMessage');
+    if (!status) {
+      status = document.createElement('div');
+      status.id = 'statusMessage';
+      status.className = `fixed bottom-4 left-1/2 py-3 px-6 rounded-lg text-white font-semibold shadow-lg z-[100] transition-all duration-300`;
+      document.body.appendChild(status);
+    }
+    status.textContent = msg;
+    status.className = `fixed bottom-4 left-1/2 py-3 px-6 rounded-lg text-white font-semibold shadow-lg z-[100] transition-all duration-300 ${colorClass}`;
+    
+    // Show
+    status.style.transform = 'translate(-50%, 0)';
+    
+    // Hide after 3s
+    setTimeout(() => {
+      status.style.transform = 'translate(-50%, 100px)';
+    }, 3000);
+  }
+});
+</script>
+
+
+
+  
+
+  <footer class="fixed bottom-0 left-0 w-full py-6 glass-effect glass-effect-light dark:glass-effect-dark" 
+    style="backdrop-filter: blur(20px); background: rgba(255,255,255,0.1); border-top: 1px solid rgba(255,255,255,0.2);">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-sm">
+      <div class="mb-4 md:mb-0">
+        &copy; <span id="year"></span> Aastha Thakker. All rights reserved.
+      </div>
+      <div class="flex space-x-4">
+        <a href="https://medium.com/@aasthathakker" target="_blank" rel="noopener noreferrer" class="social-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75S24 8.83 24 12z"/>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/aasthathakker" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Visit my LinkedIn profile (opens in new tab)">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+          </svg>
+        </a>
+        <a href="https://github.com/aasthathakker" target="_blank" rel="noopener noreferrer" class="social-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.835 2.809 1.305 3.492.998.108-.778.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.465-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.771.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.614.801.577 4.767-1.586 8.205-6.084 8.205-11.387 0-6.627-5.373-12-12-12z"/>
+          </svg>
+        </a>
+        <a href="mailto:aasthathakker@example.com" rel="noopener noreferrer" class="social-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 12.713l-11.756-8.799v12.245h23.512v-12.245l-11.756 8.799zm-12 6.287l12-9 12 9v-13.84l-12-9-12 9v13.84z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/blog.js"></script>
+  <script src="assets/js/background.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
+<!-- index.html - Main HTML structure with all sections and content
+
+assets/css/themes.css - Theme variables, light/dark mode styles, and theme toggle animations
+assets/css/styles.css - Component styles, animations, and visual effects
+assets/css/responsive.css - All responsive design and mobile styles
+
+assets/js/data.js - Blog posts data and categories
+assets/js/theme.js - Theme switching functionality with enhanced animations
+assets/js/blog.js - Blog management, search, filtering, and post viewing
+assets/js/background.js - Animated background canvas with particles
+assets/js/main.js - Navigation, forms, and app initialization -->

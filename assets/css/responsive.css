@@ -1,0 +1,73 @@
+/* Mobile-first responsive design (≤640px) */
+@media (max-width: 640px) {
+  .container,
+  header .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .text-4xl {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .md\:text-6xl {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .quick-tile {
+    padding: 0.75rem;
+  }
+
+  .quick-tile .flex {
+    gap: 0.5rem;
+  }
+
+  .w-48 {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+
+/* Tablet responsiveness (641px–1024px) */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .grid.grid-cols-2.lg\:grid-cols-4,
+  .grid.grid-cols-1.md\:grid-cols-2.lg\:grid-cols-3,
+  .grid.grid-cols-1.md\:grid-cols-2.lg\:grid-cols-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Navigation responsiveness (≤768px) */
+@media (max-width: 768px) {
+  nav.hidden.md\:flex {
+    display: none; /* Removed !important for better maintainability */
+  }
+
+  header .container {
+    justify-content: space-between;
+  }
+
+  .glass-nav {
+    padding: 6px 12px;
+    font-size: 0.875rem;
+  }
+
+  .theme-toggle {
+    padding: 6px 10px;
+    gap: 6px;
+  }
+
+  .theme-toggle span {
+    font-size: 0.75rem;
+  }
+}
+
+/* Large screen optimizations (≥1440px) */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the container */
+  }
+}
