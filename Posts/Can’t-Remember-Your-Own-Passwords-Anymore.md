@@ -2,13 +2,14 @@
 id: Can’t-Remember-Your-Own-Passwords-Anymore
 title: Why You Can’t Remember Your Own Passwords Anymore?
 date: 2025-08-7
-category: cyber-awareness
-excerpt: 
-cover: https://miro.medium.com/v2/resize:fit:828/format:webp/1*FTxswZoIwHa84ySXB602gw.png
+category: Cyber-Awareness
+excerpt: Relying too much on password managers? Digital amnesia is real and it's creeping in! Over-relying on password managers is rewiring your memory!
+cover: https://media.licdn.com/dms/image/v2/D4D12AQHxQHXdxA_G5g/article-cover_image-shrink_720_1280/B4DZiFy0NJHwAI-/0/1754591350635?e=1762992000&v=beta&t=vwXGRU3OnLbiqb7pYPDNomqGrCi52JuuErh-Z08OUQQ
 ---
-![Placeholder for Cover Image](https://miro.medium.com/v2/resize:fit:828/format:webp/1*FTxswZoIwHa84ySXB602gw.png)
 
 # When Your Brain Becomes a Browser Tab
+
+![Placeholder for Cover Image](https://media.licdn.com/dms/image/v2/D4D12AQHxQHXdxA_G5g/article-cover_image-shrink_720_1280/B4DZiFy0NJHwAI-/0/1754591350635?e=1762992000&v=beta&t=vwXGRU3OnLbiqb7pYPDNomqGrCi52JuuErh-Z08OUQQ)
 
 Remember phone numbers? Of course you don’t, your phone remembers them for you. Remember your friend’s birthday? That’s what Facebook is for. Remember your banking password? That’s safely tucked away in your password manager, right next to the other 147 passwords you definitely don’t know by heart.
 
@@ -19,6 +20,8 @@ This isn’t just forgetfulness, it’s **digital amnesia**. And it’s rewiring
 Digital amnesia is when our brains stop remembering information that our devices can easily store and recall for us. In the password context, it means we’ve become so dependent on auto-fill and password managers that we literally can’t access our own accounts without them.
 
 Digital amnesia is our brain’s sneaky way of saying, “Why remember this when my phone will do it for me?” It sounds smart, but we’re not just forgetting random facts anymore. We’re forgetting the keys to our digital lives.
+
+![Placeholder](https://media.licdn.com/dms/image/v2/D4D12AQHoWjJ3JS0tXg/article-inline_image-shrink_1500_2232/B4DZiFy29xH8AY-/0/1754591360843?e=1762992000&v=beta&t=bIR76hXJDMUIGR1Y3xdwYVqJ4bYXrPD8urv2mt5B9gU)
 
 ## Password Managers: Our Digital Comfort Zone
 
@@ -79,6 +82,7 @@ Pick three critical accounts, like email, banking, and one emergency backup. The
 Once a month, pick one password and try to remember it before auto-filling. It’s like a tiny workout for your brain. Start small, stay consistent.
 
 ## You’re Still the Boss
+![Placeholder](https://media.licdn.com/dms/image/v2/D4D12AQFa7NFPMG7dTQ/article-inline_image-shrink_1500_2232/B4DZiFy27SG8AU-/0/1754591362033?e=1762992000&v=beta&t=sRcnrLDIBVU-zA6hTlcuw0s3z_B5quSKFzQFQZXQOvI)
 
 Password managers aren’t evil, they’re incredibly useful tools that make our digital lives safer and easier. But like any tool, they work best when you stay in control.
 

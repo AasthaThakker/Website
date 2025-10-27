@@ -2,14 +2,14 @@
 id: cyber-audits 
 title: Cybersecurity Audits & Compliance Made Simple
 date: 2025-09-4 
-category: compliance 
+category: Compliance 
 excerpt: Cybersecurity rules shape our world, from college Wi-Fi to global client data. Audits don't have to be boring when explained through…
-cover: https://miro.medium.com/v2/resize:fit:828/format:webp/1*X0NaZQJbAy2MBUNT5hZktQ.png
+cover: https://media.licdn.com/dms/image/v2/D4D12AQEEWNTa7LeThg/article-cover_image-shrink_720_1280/B4DZkVu3vSH0AM-/0/1757006233829?e=1762992000&v=beta&t=XoyI9hkJCOIaN_pVfz6_oFUWcclIa-Crr8r3cOiqOxk
 ---
 
 # Cybersecurity Audits & Compliance Made Simple
 
-![Placeholder for Image](https://miro.medium.com/v2/resize:fit:828/format:webp/1*X0NaZQJbAy2MBUNT5hZktQ.png)
+![Placeholder for Image](https://media.licdn.com/dms/image/v2/D4D12AQEEWNTa7LeThg/article-cover_image-shrink_720_1280/B4DZkVu3vSH0AM-/0/1757006233829?e=1762992000&v=beta&t=XoyI9hkJCOIaN_pVfz6_oFUWcclIa-Crr8r3cOiqOxk)
 
 When we hear the word **audit**, most of us think about finance or taxes. But in today's digital world, cybersecurity audits and compliance are equally important. Whether you're a student using a college Wi-Fi network or an employee handling client data in a multinational company, audits and compliance affect us all.
 
@@ -18,6 +18,8 @@ When we hear the word **audit**, most of us think about finance or taxes. But in
 ## What is an Audit?
 
 Just as a doctor examines your heart, lungs, and blood pressure to ensure everything's working properly, a **cybersecurity audit** examines your company's digital policies, controls, and activities.
+
+![Placeholder](https://media.licdn.com/dms/image/v2/D4D12AQH3QpETv_a_0Q/article-inline_image-shrink_400_744/B4DZkVvAGBHwAY-/0/1757006267640?e=1762992000&v=beta&t=ZxZTX3YG0pyrzSejQlQg7qpxO4MhtbyQYIMfIFw12So)
 
 ### Types of Audit based on Purpose
 1. **Financial audit** → Like checking if a college fest budget was spent correctly.  
@@ -54,7 +56,7 @@ Compliance simply means following the rules — but in cybersecurity, these 
 ---
 
 ## The Four Phase Compliance Journey
-![Placeholder for Image](https://miro.medium.com/v2/resize:fit:720/format:webp/0*AqQ0vEvfhi1OWeAn.jpg)
+![Placeholder for Image](https://media.licdn.com/dms/image/v2/D4D12AQGxZ_U6cQjoOg/article-inline_image-shrink_1500_2232/B4DZkVu_9MH4AU-/0/1757006267180?e=1762992000&v=beta&t=_Wtfu6qlNtiBYYMqibUt7ySUjmh5jseW83zSJxKBosQ)
 ### Phase 1: Foundation Setting
 1. **Planning**: Define scope, objectives, and timeline. Understand what exactly does the regulation require?  
 2. **Preliminary Review**: Understand the organization's current setup.  
@@ -90,7 +92,7 @@ Modern security assessments focus on identifying and managing risks through:
 1. **Asset Identification**: What needs protection?  
 2. **Security Control Selection**: What protections do you need?  
 3. **Effectiveness Testing**: Are your protections actually working?  
-
+![Placeholder](https://media.licdn.com/dms/image/v2/D4D12AQEnxBjzZuLSxg/article-inline_image-shrink_1500_2232/B4DZkVvAW7IEAc-/0/1757006272384?e=1762992000&v=beta&t=V3EBrh5oZletjzA7bCaUn4F7By24wYs8b6XXyHc7KBM)
 ---
 
 ## Why Audits Matter: More Than Just Checking Boxes
@@ -122,8 +124,6 @@ Failed audits aren't the end of the world. They're expensive lessons that help y
 5. Prioritize Risks: Fix the most dangerous vulnerabilities first.  
 6. Document Everything: Good records make future audits easier.  
 7. Train Your Team: The best security system fails if people don't know how to use it.  
-
-![Placeholder for Image](IMAGE_LINK_HERE)
 
 ---
 

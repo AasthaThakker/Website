@@ -2,12 +2,12 @@
 id: Script-Kiddies-Start-Demanding-Ransom
 title: What if Script-Kiddies Start Demanding Ransom with AI? 
 date: 2025-08-28 
-category: script-kiddes 
-excerpt: 
-cover: https://miro.medium.com/v2/resize:fit:828/format:webp/1*3w5l2uL52LsQG-Ok09GUAw.png
+category: script-kiddies 
+excerpt: What happens when artificial intelligence puts the power of sophisticated cybercrime into the hands of people who can barely write “Hello World”? What once took organized crime groups months could soon be replicated by individuals with minimal skill.
+cover: https://media.licdn.com/dms/image/v2/D4D12AQHUYOD-vYuhhw/article-cover_image-shrink_720_1280/B4DZjxbe9kGsAM-/0/1756397173589?e=1762992000&v=beta&t=RCHaWg4ZmyuVPCfpCugZkOP75X1hPFIpUUZ664g6cso
 ---
 
-![Placeholder for Cover Image](https://miro.medium.com/v2/resize:fit:828/format:webp/1*3w5l2uL52LsQG-Ok09GUAw.png)
+![Placeholder for Cover Image](https://media.licdn.com/dms/image/v2/D4D12AQHUYOD-vYuhhw/article-cover_image-shrink_720_1280/B4DZjxbe9kGsAM-/0/1756397173589?e=1762992000&v=beta&t=RCHaWg4ZmyuVPCfpCugZkOP75X1hPFIpUUZ664g6cso)
 
 # Content
 
@@ -103,7 +103,7 @@ Traditional ransomware development followed a predictable pattern: organized cri
 
 While PromptLock currently exists as a proof-of-concept rather than an active threat, its architecture reveals a turning point. The ability to weaponize AI for ransomware means the traditional barriers, years of coding expertise, cryptographic knowledge, and stealth development, are collapsing. What once took organized crime groups months could soon be replicated by individuals with minimal skill. This shift forces us to look beyond technical indicators and ask: how do we prepare for an era where AI itself becomes both the attacker and the defender?
 
-Press enter or click to view image in full size
+![Placeholder](https://media.licdn.com/dms/image/v2/D4D12AQHanB55MyM7mA/article-inline_image-shrink_1500_2232/B4DZjxbhoAHsAU-/0/1756397185305?e=1762992000&v=beta&t=sYOYWypLSzvJBtFpKhaTD-So4p7sLL5Ba_J4CUpYsRk)
 
 ## Conclusion: The Future We Choose
 
